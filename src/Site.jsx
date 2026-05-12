@@ -275,9 +275,7 @@ function Hero() {
           maxWidth: 1180,
           margin: "0 auto",
           padding: "0 32px",
-          display: "grid",
-          gridTemplateColumns: "1.1fr 1fr",
-          gap: 60,
+          display: "flex",
           alignItems: "center",
         }}
       >
@@ -377,38 +375,6 @@ function Hero() {
           </Reveal>
         </div>
 
-        {/* Visual — dashboard mockup */}
-        <Reveal delay={120}>
-          <div style={{ position: "relative" }}>
-            <div
-              style={{
-                position: "absolute",
-                inset: -20,
-                background: `linear-gradient(135deg, ${B.orange}30, ${B.royalBlue}30)`,
-                filter: "blur(50px)",
-                borderRadius: 32,
-                zIndex: 0,
-              }}
-            />
-            <div
-              style={{
-                position: "relative",
-                zIndex: 1,
-                borderRadius: 18,
-                overflow: "hidden",
-                border: `1px solid ${B.athensGray}`,
-                boxShadow: "0 30px 60px -20px rgba(23,33,52,0.25)",
-                background: B.white,
-              }}
-            >
-              <img
-                src={A("/screenshots/dashboard.png")}
-                alt="Boardirector dashboard"
-                style={{ display: "block", width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
